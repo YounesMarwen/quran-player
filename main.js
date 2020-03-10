@@ -119,10 +119,10 @@ const getAllSurahsNames = async () => {
     // const allSurahsNamesJson = await allSurahsNames.json();
     // const surahs = await allSurahsNamesJson.data.surahs;
     surahsArray.forEach((e, index) => {
-        var li = document.createElement("li");
-        li.innerHTML = e;
-        li.setAttribute("id", "surah_" + (index + 1));
-        document.querySelector('#list_suras').appendChild(li);
+        var div = document.createElement("div");
+        div.innerHTML = `<span>${index + 1} - ${e}</span>`;
+        div.setAttribute("id", "surah_" + (index + 1));
+        document.querySelector('#list_suras').appendChild(div);
     });
     document.querySelector('.overlay-player').style.display = 'none';
 }
