@@ -210,7 +210,6 @@ const appendPlayerContent = () => {
     </g>
 </svg>
 </div>
-<h1>Quran player</h1>
 <div class="receiters-list">
 <h3 align="center">Receiters</h3>
 <div>
