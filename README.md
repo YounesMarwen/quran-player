@@ -10,7 +10,7 @@ Demo: https://younesmarwen.github.io/quran-player/
 
 2. Add main.js before the closing tag of your body </body>
 
-3. Add a div with class "quran-player-container" ```<div class="quran-player-container"></div>```
+3. Add a div with class name "quran-player-container" ```<div class="quran-player-container"></div>```
 
 ### Resources
 
