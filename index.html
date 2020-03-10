@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Player</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="player-container">
+        <div class="overlay-player">
+            <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="64px" height="64px"
+                viewBox="0 0 128 128" xml:space="preserve">
+                <g transform="rotate(0)">
+                    <path fill="#afafaf"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z" />
+                    <path fill="#000000"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z"
+                        transform="rotate(45 64 64)" />
+                    <path fill="#000000"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z"
+                        transform="rotate(90 64 64)" />
+                    <path fill="#000000"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z"
+                        transform="rotate(135 64 64)" />
+                    <path fill="#000000"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z"
+                        transform="rotate(180 64 64)" />
+                    <path fill="#000000"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z"
+                        transform="rotate(225 64 64)" />
+                    <path fill="#000000"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z"
+                        transform="rotate(270 64 64)" />
+                    <path fill="#000000"
+                        d="M64.33.25a16 16 0 0 1 16 16c0 4.46-4.93 11.74-9.1 14.62-5.28 3.62-6.56 17.7-6.56 17.7s-.9-13.92-7.24-18.03c-5.4-3.5-9.1-9.8-9.1-14.3a16 16 0 0 1 16-16z"
+                        transform="rotate(315 64 64)" />
+                    <animateTransform attributeName="transform" type="rotate"
+                        values="0 64 64;45 64 64;90 64 64;135 64 64;180 64 64;225 64 64;270 64 64;315 64 64"
+                        calcMode="discrete" dur="720ms" repeatCount="indefinite" />
+                </g>
+            </svg>
+        </div>
+        <h1>Quran player</h1>
+        <audio controls>
+            <source src="https://server6.mp3quran.net/thubti/001.mp3" type="audio/mpeg">
+        </audio>
+        <div class="receiters-list">
+            <h3 align="center">Receiters</h3>
+            <div>
+                <div class="single-receiter-container"><span onclick="getSurasByReceiter(49)">Abdelbari
+                        Al-Toubayti</span>
+                </div>
+                <div class="single-receiter-container"><span onclick="getSurasByReceiter(55)">Abdul Aziz Al-Ahmad</span>
+                </div>
+                <div class="single-receiter-container"><span onclick="getSurasByReceiter(53)">Abdulbasit
+                        Abdulsamad</span>
+                </div>
+                <div class="single-receiter-container"><span onclick="getSurasByReceiter(62)">Abdullah Al-Johany</span>
+                </div>
+            </div>
+        </div>
+        <div class="playlist-container">
+
+            <div class="playlist-surat-list">
+                <h3 align="center">Surahs</h3>
+                <ul id="list_suras"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
