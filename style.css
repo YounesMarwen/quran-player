@@ -2,11 +2,10 @@
     margin-bottom: 20px;
 }
 .quran-player-container{
-    width: 50%;
+    width: 100%;
     margin: auto;
     position: relative;
     padding: 20px;
-    font-family: 'Roboto', sans-serif !important;
 }
 .overlay-player{
     position: absolute;
@@ -48,12 +47,12 @@ audio{
     background-color: #f1f3f4;
     padding:10px;
 }
-.receiters-list div{
-    display: flex;
+.receiters-list > div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .single-receiter-container{
-    width: 25%;
     text-align: center;
     padding:5px;
 }
@@ -84,7 +83,7 @@ audio{
     direction: rtl;
     margin: 0;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 .quran-player-container div.surahs-list div span{
     cursor: pointer
@@ -128,4 +127,20 @@ audio{
 /* Handle on hover */
 .surahs-list::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@media screen and (max-width: 430px){
+    .quran-player-container div.surahs-list{
+        grid-template-columns: auto auto;
+    }
+    .receiters-list > div{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width: 767px){
+    .quran-player-container div.surahs-list{
+        grid-template-columns: auto auto auto;
+    }
 }

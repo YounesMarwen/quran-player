@@ -215,18 +215,17 @@ const appendPlayerContent = () => {
 <h3 align="center">Receiters</h3>
 <div>
     <div class="single-receiter-container" style="border-right: solid 1px white;"><span
-            class="first-receiter" onclick="getSurasByReceiter(this, 49)">Abdelbari
-            Al-Toubayti</span>
+            class="first-receiter" onclick="getSurasByReceiter(this, 54)">Abdulrahman Alsudaes</span>
     </div>
     <div class="single-receiter-container" style="border-right: solid 1px white;"><span
-            class="second-receiter" onclick="getSurasByReceiter(this, 55)">Abdul Aziz Al-Ahmad</span>
+            class="second-receiter" onclick="getSurasByReceiter(this, 31)">Saud Al-Shuraim</span>
     </div>
     <div class="single-receiter-container" style="border-right: solid 1px white;"><span
             class="third-receiter" onclick="getSurasByReceiter(this, 53)">Abdulbasit
             Abdulsamad</span>
     </div>
     <div class="single-receiter-container"><span class="fourth-receiter"
-            onclick="getSurasByReceiter(this, 62)">Abdullah Al-Johany</span>
+            onclick="getSurasByReceiter(this, 123)">Mishary Al Afasi</span>
     </div>
 </div>
 </div>
