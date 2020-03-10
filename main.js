@@ -133,7 +133,7 @@ const getSurasByReceiter = async (param) => {
 
     const getReceiter = async () => {
 
-        document.querySelector('.overlay-player').style.display = 'block';
+        document.querySelector('.overlay-player').style.display = 'flex';
         const recitersdata = await fetch('https://mp3quran.net/api/_english.php');
         const recitersJson = await recitersdata.json();
         const receitersArray = recitersJson.reciters;
